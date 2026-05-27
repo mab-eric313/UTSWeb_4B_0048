@@ -1,0 +1,34 @@
+:root {
+	--clr-premium-white: #F6F3EB;
+	--clr-deep-forest-green: #0c322c;
+	--clr-medium-aquamarine: #58aa88;
+
+	--clr-deep-forest-green-rgb: 12, 50, 44;
+	--clr-medium-aquamarine-rgb: 88, 170, 136;
+	--clr-crimson-rgb: 174, 36, 72;
+}
+
+.text-crimson {
+  --bs-text-opacity: 1;
+  color: rgba(174, 36, 72, 1) !important;
+}
+
+.text-crimson-50 {
+  --bs-text-opacity: 1;
+  color: rgba(174, 36, 72, 0.5) !important;
+}
+
+.bg-medium-aquamarine {
+	--clr-bg-opacity: 1;
+	background-color: rgba(var(--clr-medium-aquamarine-rgb), var(--clr-bg-opacity)) !important;
+}
+
+.bg-crimson {
+	--clr-bg-opacity: 1;
+	background-color: rgba(var(--clr-crimson-rgb), var(--clr-bg-opacity)) !important;
+}
+
+.bg-deep-forest-green {
+	--clr-bg-opacity: 1;
+	background-color: rgba(var(--clr-deep-forest-green-rgb), var(--clr-bg-opacity)) !important;
+}
