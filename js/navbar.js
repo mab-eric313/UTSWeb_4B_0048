@@ -13,6 +13,8 @@ class Navbar extends HTMLElement {
 						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 							<li class="nav-item fw-bold"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
 							<li class="nav-item fw-bold"><a class="nav-link" href="../html/about-us.html">About Us</a></li>
+							<li class="nav-item fw-bold"><a class="nav-link" href="../html/products.html">Products</a></li>
+							<!--
 							<li class="nav-item">
 								<div class="dropdown">
 									<a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Product</a>
@@ -22,6 +24,7 @@ class Navbar extends HTMLElement {
 									</ul>
 								</div>
 							</li>
+							-->
 							<li class="nav-item fw-bold"><a class="nav-link" href="#!">Support</a></li>
 							<li class="nav-item fw-bold"><a class="nav-link" href="#!">Community</a></li>
 							<li class="nav-item">
