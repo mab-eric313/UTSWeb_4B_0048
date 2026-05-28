@@ -5,7 +5,9 @@
 
 	--clr-deep-forest-green-rgb: 12, 50, 44;
 	--clr-medium-aquamarine-rgb: 88, 170, 136;
+	--clr-light-crimson-rgb: 175, 79, 104;
 	--clr-crimson-rgb: 174, 36, 72;
+	--clr-crimson-rgb-50: 174, 36, 72;
 }
 
 .text-crimson {
@@ -28,7 +30,16 @@
 	background-color: rgba(var(--clr-crimson-rgb), var(--clr-bg-opacity)) !important;
 }
 
+.bg-light-crimson {
+	--clr-bg-opacity: 1;
+	background-color: rgba(var(--clr-light-crimson-rgb), var(--clr-bg-opacity)) !important;
+}
+
 .bg-deep-forest-green {
 	--clr-bg-opacity: 1;
 	background-color: rgba(var(--clr-deep-forest-green-rgb), var(--clr-bg-opacity)) !important;
+}
+
+.hover-underline:hover {
+	text-decoration: underline !important;
 }
