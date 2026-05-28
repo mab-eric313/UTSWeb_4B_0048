@@ -1,0 +1,1 @@
+- Ubah vanilla javascript `js/*` ke jquery
