@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-							<li class="nav-item fw-bold"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+							<li class="nav-item fw-bold"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
 							<li class="nav-item fw-bold"><a class="nav-link" href="../html/about-us.html">About Us</a></li>
 							<li class="nav-item">
 								<div class="dropdown">
@@ -41,6 +41,19 @@ class Navbar extends HTMLElement {
 				</div>
 			</nav>
 		`;
+
+		const currentPath = window.location.pathname.split("/").pop() || "index.html"
+
+		this.querySelectorAll(".nav-link").forEach(page => {
+			const href = page.getAttribute("href")
+			if (!href || href.startsWith("#")) return
+
+			const linkFile = href.split("/").pop()
+			if (linkFile === currentPath) {
+				page.classList.add("active")
+				page.setAttribute("aria-current", "page")
+			}
+		})
 	}
 }
 
