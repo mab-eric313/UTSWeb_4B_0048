@@ -37,7 +37,7 @@ class Navbar extends HTMLElement {
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="btn btn-primary ms-3" href="#!">Download</a>
+								<a class="btn btn-primary ms-3" href="../html/products.html">Download</a>
 							</li>
 						</ul>
 					</div>
