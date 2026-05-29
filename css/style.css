@@ -42,6 +42,12 @@
 	background-color: rgba(var(--clr-deep-forest-green-rgb), var(--clr-bg-opacity)) !important;
 }
 
+#mypopover {
+	position: fixed;
+	width: 80%;
+	height: 85%;
+}
+
 .card-button:hover {
 	background-color: var(--bs-gray-200);
 }
