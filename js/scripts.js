@@ -3,5 +3,18 @@
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
 */
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+
+$(document).on("click", ".chooser", function () {
+	$(this).closest(".row").find(".chooser")
+		.removeClass("text-white bg-crimson")
+		.addClass("text-dark")
+
+	$(this).removeClass("text-dark bg-dark").addClass("text-white bg-crimson")
+});
+
+$(document).on("click", ".btn-switch-deliver", function () {
+	if ( $(".btn-switch-receiver").html() === "Download" )
+		$(".btn-switch-receiver").html("Contact Us")
+	else
+		$(".btn-switch-receiver").html("Download")
+});

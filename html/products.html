@@ -158,7 +158,7 @@
 	</section>
 
 	<div popover="auto" id="mypopover">
-		<div class="d-flex justify-content-end sticky-top">
+		<div class="d-flex justify-content-end">
 			<button class="btn border-0" 
 				popovertarget="mypopover" 
 				popovertargetaction="hide">
@@ -166,17 +166,45 @@
 			</button>
 		</div>
 		<div class="mx-5 px-5 pb-5">
-			<h3>hello world</h3>
-			<p class="fs-5">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu diam nec risus blandit feugiat eget id magna. In hac habitasse platea dictumst. Sed rutrum fermentum est sit amet consequat. Nulla rutrum quam magna, nec lobortis nibh condimentum vel. Aenean dictum id elit nec condimentum. Fusce varius interdum cursus. Maecenas sit amet tincidunt dui. Ut mi velit, congue vel lacinia vitae, aliquam vel nibh. Quisque diam libero, aliquet pharetra interdum vitae, commodo at odio. Suspendisse venenatis porta cursus. Sed ac risus vel dolor congue placerat in nec risus. Vivamus sodales est sagittis, vestibulum leo sit amet, malesuada velit. Maecenas id sapien nulla. Praesent auctor nulla sed odio interdum eleifend. Mauris et consequat turpis. Nunc feugiat eget lorem ac condimentum. 
+			<h1 class="my-3">Debian Nova - Desktop</h1>
+			<p class="fs-5 popover-desc">
+				A modern, stable Linux desktop experience for your team. Designed for productivity with up-to-date software and seamless hardware compatibility out of the box.
 			</p>
-			<p class="fs-5">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu diam nec risus blandit feugiat eget id magna. In hac habitasse platea dictumst. Sed rutrum fermentum est sit amet consequat. Nulla rutrum quam magna, nec lobortis nibh condimentum vel. Aenean dictum id elit nec condimentum. Fusce varius interdum cursus. Maecenas sit amet tincidunt dui. Ut mi velit, congue vel lacinia vitae, aliquam vel nibh. Quisque diam libero, aliquet pharetra interdum vitae, commodo at odio. Suspendisse venenatis porta cursus. Sed ac risus vel dolor congue placerat in nec risus. Vivamus sodales est sagittis, vestibulum leo sit amet, malesuada velit. Maecenas id sapien nulla. Praesent auctor nulla sed odio interdum eleifend. Mauris et consequat turpis. Nunc feugiat eget lorem ac condimentum. 
-			</p>
+			<span>Releases: </span>
+			<div class="container text-center mb-3">
+				<div class="row row-cols-3">
+					<div class="chooser col text-white bg-crimson border border-1 border-dark">
+						17.0
+					</div>
+					<div class="chooser col text-dark bg-white border border-1 border-dark">
+						18.0
+					</div>
+					<div class="chooser col text-dark bg-white border border-1 border-dark">
+						19.0
+					</div>
+				</div>
+			</div>
+			<span class="fs-5">Edition:</span>
+			<div class="container text-center mb-3">
+				<div class="row row-cols-2">
+					<div class="chooser col text-white bg-crimson border border-1 border-dark btn-switch-deliver">Personal</div>
+					<div class="chooser col text-dark bg-white border border-1 border-dark btn-switch-deliver">Enterprise</div>
+				</div>
+			</div>
+			<div class="container bg-secondary fs-6 p-5 mb-5">
+				<span class="text-info">Note:*</span>
+				<ul class="text-white">
+					<li>Personal edition is free forever. Includes core OS, community support, and standard security updates. No credit card required.</li>
+					<li>Enterprise edition requires an active subscription. Includes priority security patches, SLA-backed support, and access to enterprise features. Contact us for pricing.</li>
+				</ul>
+				</p>
+			</div>
+			<button class="container btn bg-crimson text-white btn-switch-receiver">Download</button>
 		</div>
 	</div>
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../js/scripts.js"></script>
 	<!-- Bootstrap core JS-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->

@@ -42,6 +42,10 @@
 	background-color: rgba(var(--clr-deep-forest-green-rgb), var(--clr-bg-opacity)) !important;
 }
 
+.chooser:hover {
+	cursor: pointer;
+}
+
 #mypopover {
 	position: fixed;
 	width: 80%;
