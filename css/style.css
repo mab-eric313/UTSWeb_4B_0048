@@ -46,7 +46,7 @@
 	cursor: pointer;
 }
 
-#mypopover {
+.mypopover {
 	position: fixed;
 	width: 80%;
 	height: 85%;
