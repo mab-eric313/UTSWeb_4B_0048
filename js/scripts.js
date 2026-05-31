@@ -283,3 +283,8 @@ $("[data-learn]").on("click", function () {
 		alert("Thank you")
 	})
 })
+
+// submit button for About Us page
+$("#aboutus-popover-submit").on("click", function () {
+	alert("Your Message has been sent")
+})
