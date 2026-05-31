@@ -151,3 +151,131 @@ $("[data-product]").on("click", function () {
 		)
 	} else $("#product-popover-note").empty()
 })
+
+// certificates and courses
+const Learns = {
+	// certificates
+	ncsa: {
+		title: "Nova Certified System Administrator",
+		desc: "Validate your skills in managing and maintaining Debian Nova systems. Ideal for sysadmins and IT professionals entering the Linux world.",
+		level: "Beginner",
+		duration: "3 hours",
+		format: "Online, multiple choice, and practical",
+		topics: [
+			"Installing and configuring Debian Nova",
+			"Managing users, groups, and permissions",
+			"Package management with APT",
+			"Basic networking and firewall setup",
+			"System monitoring and logging",
+		]
+	},
+	nce: {
+		title: "Nova Certified Engineer",
+		desc: "Advanced certification for engineers who deploy and optimize Debian Nova in production environments, including server, cloud, and container workloads.",
+		level: "Intermediate",
+		duration: "3 hours",
+		format: "Online and practical exam",
+		topics: [
+			"Deploying Debian Nova on server and cloud",
+			"Container management with Docker & Kubernetes",
+			"Virtualization with KVM and VirtualBox",
+			"Automating tasks with Bash and Ansible",
+			"Performance tuning and troubleshooting",
+		]
+	},
+	ncss: {
+		title: "Nova Certified Security Specialist",
+		desc: "Demonstrate expertise in securing Debian Nova systems. Covers hardening, vulnerability management, and enterprise compliance standards.",
+		level: "Advanced",
+		duration: "4 hours",
+		format: "Online and practical exam",
+		topics: [
+			"System hardening and security policies",
+			"Firewall configuration with nftables",
+			"Managing security backports and CVE patches",
+			"Compliance with ISO 27001 and SOC2",
+			"Intrusion detection and incident response",
+		]
+	},
+
+	// courses
+	getStarted: {
+		title: "Getting Started with Debian Nova",
+		desc: "A beginner-friendly course covering installation, basic configuration, and everyday usage of Debian Nova Desktop and Server.",
+		level: "Beginner",
+		duration: "3 hours",
+		format: "Self-paced, Video, and Quiz",
+		topics: [
+			"Introduction to Debian Nova",
+			"Installation and first setup",
+			"Navigating the Desktop environment",
+			"Installing and updating software",
+			"Basic terminal commands",
+			"Getting help and community resources",
+		]
+	},
+	sysadmin: {
+		title: "Debian Nova for System Administrators",
+		desc: "Learn how to manage users, packages, services, and networking on Debian Nova in a real-world enterprise environment.",
+		level: "Intermediate",
+		duration: "8 hours",
+		format: "Self-paced, Video, and Lab",
+		topics: [
+			"User and group management",
+			"File system and permissions",
+			"Package management and APT",
+			"Networking and DNS configuration",
+			"Managing services with systemd",
+			"Backup and recovery with Timeshift",
+			"Monitoring with journald and htop",
+		]
+	},
+	security: {
+		title: "Securing Debian Nova for Enterprise",
+		desc: "Hands-on course covering system hardening, firewall configuration, security backports, and compliance best practices.",
+		level: "Advanced",
+		duration: "10 hours",
+		format: "Self-paced, Video, Lab, and Assessment",
+		topics: [
+			"Security fundamentals on Linux",
+			"System hardening checklist",
+			"Firewall setup with nftables",
+			"Managing CVE and security backports",
+			"Implementing SELinux / AppArmor",
+			"Audit logging and compliance reporting",
+			"Incident response and forensics basics",
+		]
+	},
+}
+
+$("[data-learn]").on("click", function () {
+	const dataLearn = $(this).attr("data-learn")
+	console.log(dataLearn)
+	const learn = Learns[dataLearn]
+
+	$("#learn-popover-title").html(learn.title)
+	$("#learn-popover-desc").html(learn.desc)
+	$("#learn-popover-level").html(`
+		<span>Level: ${learn.level}</span>
+	`)
+	$("#learn-popover-duration").html(`
+		<span>Edition: ${learn.duration}</span>
+	`)
+
+	$("#learn-popover-topics").html(`
+		<ul id="learn-popover-topics-desc">
+		</ul>
+	`)
+
+	$("#learn-popover-topics-desc").html(
+		learn.topics.map((value) => `
+			<li>
+				${value}
+			</li>
+		`).join('')
+	)
+
+	$("#learn-popover-follow").on("click", function () {
+		alert("Thank you")
+	})
+})
