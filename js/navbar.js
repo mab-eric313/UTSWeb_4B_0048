@@ -25,14 +25,12 @@ class Navbar extends HTMLElement {
 								</div>
 							</li>
 							-->
-							<li class="nav-item fw-bold"><a class="nav-link" href="#!">Support</a></li>
-							<li class="nav-item fw-bold"><a class="nav-link" href="#!">Community</a></li>
 							<li class="nav-item">
 								<div class="dropdown">
 									<a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#!">Learn</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="dropdown-item" href="#!">Training</a></li>
-										<li class="nav-item"><a class="dropdown-item" href="#!">Certification</a></li>
+										<li class="nav-item"><a class="dropdown-item" href="../html/learn.html#certificate">Certification</a></li>
+										<li class="nav-item"><a class="dropdown-item" href="../html/learn.html#courses">Courses</a></li>
 									</ul>
 								</div>
 							</li>
