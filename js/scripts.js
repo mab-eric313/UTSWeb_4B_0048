@@ -150,6 +150,10 @@ $("[data-product]").on("click", function () {
 			`).join('')
 		)
 	} else $("#product-popover-note").empty()
+
+	$("#product-popover-button").on("click", function () {
+		alert("Thank you")
+	})
 })
 
 // certificates and courses
